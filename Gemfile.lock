@@ -217,7 +217,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  babel-transpiler (= 0.7.0)
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)

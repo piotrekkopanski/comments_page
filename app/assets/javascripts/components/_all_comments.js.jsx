@@ -4,6 +4,10 @@ class AllComments extends React.Component {
     this.props.handleDelete(id);
   }
 
+  onUpdate = (comment) => {
+    this.props.onUpdate(comment);
+  }
+
   render() {
     if (this.props.comments.length == 0) {
       return (
@@ -12,12 +16,13 @@ class AllComments extends React.Component {
         </div>
       )
     }
-    
+
     var comments= this.props.comments.map((comment) => {
       return (
         <div key={comment.id} className = "comment">
-          <h3 className = "description">{comment.description}</h3>
-          <button className = "remove" onClick={(e) => this.handleDelete(comment.id, e)}>X</button>
+          <Comment comment={comment}
+            handleDelete={(e) => this.handleDelete(comment.id, e)}
+            handleUpdate={this.onUpdate}/>
         </div>
       )
     });

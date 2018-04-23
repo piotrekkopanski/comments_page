@@ -62,3 +62,9 @@ button.remove {
   background: white;
   color: red;
 }
+
+button.edit {
+  background: white;
+  margin-left: 12px;
+  color: red;
+}

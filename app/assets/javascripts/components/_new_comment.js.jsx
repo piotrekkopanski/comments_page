@@ -1,6 +1,6 @@
 class NewComment extends React.Component {
   constructor(props, context) {
-  super(props, context);
+    super(props, context);
     this.state = {
       value: '',
       errors: ''

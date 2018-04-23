@@ -11,6 +11,12 @@ class Api::V1::CommentsController < Api::V1::BaseController
     respond_with Comment.destroy(params[:id])
   end
 
+  def update
+    comment = Comment.find(params[:id])
+    comment.update_attributes(comment_params)
+    respond_with comment, json: comment
+  end
+
   private
 
   def comment_params
