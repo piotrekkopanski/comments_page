@@ -1,24 +1,9 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+In Your terminal:
+  * git clone https://github.com/piotrekkopanski/comments_page.git
+  * bundle install
+  * rake db:seed
+  * rails s
+Go to http://localhost:3000/ and You can
+  * Add comment (not empty)
+  * Edit comment
+  * Delete comment

@@ -1,5 +1,5 @@
 class Body extends React.Component {
-	constructor(props, context) {
+  constructor(props, context) {
     super(props, context);
     this.state = {
       comments: [],
@@ -11,7 +11,7 @@ class Body extends React.Component {
     });
   }
 
-	handleSubmit = (comment) => {
+  handleSubmit = (comment) => {
     var newState = this.state.comments.concat(comment);
     this.setState({ comments: newState })
   }
@@ -36,7 +36,7 @@ class Body extends React.Component {
       }
     });
   }
-  
+
   removeComment(id) {
     var newComments = this.state.comments.filter((comment) => {
       return comment.id != id;

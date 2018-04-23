@@ -18,7 +18,7 @@ class Comment extends React.Component {
   }
 
   render() {
-  	handleChange = (event) => {
+    handleChange = (event) => {
       this.setState({value: event.target.value});    
     }
     var description = this.state.editable ? <input type='text' onChange={handleChange} value={this.state.value} />: <h3 className = "description">{this.props.comment.description}</h3>;
